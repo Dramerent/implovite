@@ -1,0 +1,477 @@
+
+
+
+.brends-a-text_orange{
+    color:rgba(236, 84, 0, 1);
+    font-weight: 500;
+}
+
+.brends-a-text_ocean-blue{
+    color: rgba(8, 86, 163, 1);
+}
+
+.home-img img:hover{
+    content:url("./images/home/home\ \(1\).png")
+}
+.active-page:hover{
+    color: rgba(70, 192, 193, 1);
+}
+.podpis_gray{
+    color:rgba(189, 189, 189, 1);
+}
+.brends_full{
+    height: 1140px;
+    margin-top: 70px;
+}
+
+.brends__block_grid6{
+    grid-area: f;
+    margin: 22px 11px 0 0;
+}
+.brends__block_grid7{
+    grid-area: g;
+    margin: 22px 11px 0 11px;
+}
+.brends__block_grid8{
+    grid-area: h;
+    margin: 22px 0 0 11px;
+}
+.brends__block_full{
+    grid-template-areas:
+    "a a b b c c"
+    "d d d e e e"
+    "f f g g h h ";
+    
+    height: 1040px;
+    
+    grid-template-rows:repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+.history{
+    display: flex;
+    width: 1282px;
+    flex-direction: row;
+    margin: 25px auto 0 auto;
+}
+.home-img{
+    width: 23px;
+    height: 19px;
+}
+.perho1{
+    width: 253px;
+    height: 210px;
+   
+}
+.brends__perho1{
+    top: 122px;
+    left:153px;
+    position: absolute;
+    z-index: 5;
+}
+.perho2{
+    width:233px ;
+    height: 193px;
+   
+}
+.brends__perho2{
+    top: 80px;
+    left: 212px; 
+    position: absolute;
+    z-index: 4;
+}
+.brends__perho-background1{
+    bottom: -10px;
+    right:0;
+    position: absolute;
+    z-index: 2;
+    
+    
+}
+.brends__perho-background2{
+    position: absolute;
+    bottom: -10px;
+    right:0;
+    z-index: 1;
+}
+.brends-text__perho-img{
+    width: 201px;
+    height: 21.21px;
+    
+}
+.brends-text__perho{
+    width: 201px;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 48px;
+    position: relative;
+    z-index: 20;
+}
+.perho__text-cards{
+    margin-bottom: 65px;
+}
+.beautika1{
+    width: 123px;
+    height: 290px;
+    
+    
+}
+.brends__beautika1{
+    top: 42px;
+    left: 279px;
+    z-index: 4;
+    position:absolute;
+}
+.beautika2{
+    width: 165px;
+    height: 217px;
+    
+}
+.brends__beautika2{
+    top: 89px;
+    left: 186px;
+    z-index: 3;
+    position: absolute;
+
+}
+.brends__beautika-background1{
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    right:0;
+}
+.brends__beautika-background2{
+    z-index: 2;
+    position: absolute;
+    bottom: -10px;
+    right:0;
+}
+.brends-text__beautika-img{
+    width: 143px;
+    height: 22px;
+}
+.brends-text__beautika{
+    position: relative;
+    z-index: 20;
+    width: 201px;
+    height:196px;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.beauteka__text-cards{
+    margin-bottom: 19px;
+}
+.bint1{
+    width: 110px;
+    height: 249px;
+
+}
+.brends__bint1{
+    position: absolute;
+    top: 41px;
+    left: 283px;
+    z-index: 3;
+}
+.bint2{
+    width: 141px;
+    height: 249px;
+}
+.brends__bint2{
+    position: absolute;
+    top: 83px;
+    left: 206px;
+    z-index: 4;
+}
+.brends__bint-background1{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -10px;
+}
+.brends__bint-background2{
+    position: absolute;
+    z-index: 2;
+    bottom: -10px;
+    right: 0;
+}
+.brends-text__bint{
+    width: 276px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 43px;
+    position: relative;
+    z-index: 20;
+}
+.bint-group{
+    width: 193px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.map-places_brends-margin{
+    margin: 108px auto 0 auto;
+}
+
+
+
+
+
+.brends__flower3{
+    top: -90px;
+    right: 0; 
+}
+.brends__flower2{
+    left: -13px;
+    top: 650px;
+    rotate: -15.27deg;
+}
+.brends__flower5{
+    right: 0;
+    top: 1120px;
+}
+.brends__flower6{
+    left: 0;
+    top: 1700px;
+}
+@media screen and (max-width:1500px) {
+    .history{
+        width: 1163px;
+    }
+}
+@media screen and (max-width:1279px){
+    .history{
+        width: 964px;
+    }
+    .brends__perho1{
+        left: 80px;
+    }
+    .brends__perho2{
+        left: 100px;
+    }
+    .brends__beautika1{
+        left: 200px;
+        top: 120px;
+    }
+    .beautika1{
+        width: 100px;
+        height: 230px;
+        
+        
+    }
+    .beautika2{
+        width: 120px;
+        height: 200px;
+    }
+    .brends__beautika2{
+        top: 130px;
+        left: 140px;
+    }
+    .bint1{
+        left: 200px;
+        top: 100px;
+    }
+    .bint2{
+        left: 140px;
+        top: 125px;
+    }
+    
+}
+@media screen and (max-width:960px) {
+    .history{
+        display: none;
+    }
+    .brends__block_full{
+        grid-template-areas:
+        "a a a b b b"
+        "c c c d d d"
+        "e e e f f f"
+        "g g g h h h";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 1346px;
+    }
+    .brends_full{
+        height: 1450px;
+        margin-top: 50px;
+    }
+    .brends__block_grid5{
+        margin:0;
+        margin: 11px 11px 11px 6px;
+    }
+    .brends__block_grid6{
+        margin: 11px 6px 11px 11px;
+    }
+    .brends__block_grid7{
+        margin: 11px 11px 0 6px ;
+    }
+    .brends__block_grid8{
+        margin: 11px 6px 0 11px;
+    }
+    .brends__background1_full{
+        rotate: 45deg;
+        bottom: -120px;
+        right: 30px;
+    }
+    .growvit1{
+        width: 129px;
+        height: 172px;
+    }
+    .brends__growvit1_full{
+        bottom: 0;
+        left: 130px;
+    }
+    .growvit2{
+        width: 188px;
+        height: 157px;
+    }
+    .brends__growvit2_full{
+        bottom: 0;
+        left: 40px;
+    }
+    .brends-text__growvit_center-mob{
+        margin: 0;
+        margin: 0px auto 0 auto ;
+        height: 125px;
+
+    }
+    .brends-text__perho-img{
+        width: 161px;
+        height: 17px;
+    }
+    .brends-text__perho{
+        height: 95px;
+        margin: 30px auto 0 auto;
+        align-items: center;
+    }
+    .perho1{
+        width: 222px;
+        height: 184px;
+        
+    }
+    .brends__perho1{
+        top:160px;
+        left: 37px;
+    }
+    .perho2{
+        width: 204px;
+        height: 169px;
+    }
+    .brends__perho2{
+        top: 128px;
+        left: 80px;
+    }
+    .brends__perho-background1,
+    .brends__perho-background2{
+        rotate: 60deg;
+        bottom: -130px;
+        right: 60px;
+    }
+    .brends__beautika-background1,
+    .brends__beautika-background2{
+        bottom: -150px;
+        right: -20px;
+    }
+    .brends-text__beautika{
+        height: 100px;
+        margin: 40px auto 0 auto;
+        align-items: center;
+    }
+    .beautika1{
+        width: 106px;
+        height: 251px;
+    }
+    .brends__beautika1{
+        top:110px;
+        left: 140px;
+    }
+    .beautika2{
+        width: 142px;
+        height: 187px;
+    }
+    .brends__beautika2{
+        left: 60px;
+        top: 150px;
+    }
+    .bint2{
+        width: 134px;
+        height: 237px;
+    }
+    .brends__bint2{
+       top: 121px;
+       left: 76px;
+    }
+    .bint1{
+        width: 105px;
+        height: 237px;
+    }
+    .brends__bint1{
+        top: 81px;
+        left: 149px;
+    }
+    .brends__bint-background1,
+    .brends__bint-background2{
+        rotate: 45deg;
+    }
+    .brends__bint-background1{
+        bottom: -80px;
+        left: 0;
+    }.brends__bint-background2{
+        left: 0;
+        bottom: -170px;
+    }
+   .brends-text__bint{
+        margin: 50px auto 0 auto ;
+        align-items: center;
+        text-align: center;
+        height: 70px;
+   }
+   
+   .bint-group{
+    justify-content: end;
+    height: fit-content;
+   }
+    .map-places_brends-margin{
+        margin-top: 97px;
+    }
+    .flower3,
+    .flower2,
+    .flower5,
+    .flower6{
+        display: none;
+    }
+}
+@media screen and (max-width: 720px) {
+    .brends__block_full{
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "a a a a"
+        "b b b b"
+        "c c c c"
+        "d d d d"
+        "e e e e"
+        "f f f f"
+        "g g g g"
+        "h h h h";
+        height: 2700px;
+        
+    }
+    .brends_full{
+        height: 2800px;
+        margin-top: 38px;
+    }
+    .map-places_brends-margin{
+        margin-top: 70px;
+    }
+    .brends__block_grid5 .brends__background1{
+        rotate: 0deg;
+        bottom: -10px;
+        right: 0px;
+    }
+}

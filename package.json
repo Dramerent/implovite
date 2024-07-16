@@ -1,0 +1,43 @@
+{
+  "name": "implovitv2c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "serve": "^11.2.0",
+    "@squoosh/lib": "^0.5.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.0.0",
+    "image-minimizer-webpack-plugin": "^4.0.2",
+    "image-webpack-loader": "^8.1.0",
+    "imagemin": "^9.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^11.0.1",
+    "imagemin-webpack": "^5.1.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss": "^8.4.39",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^9.5.16",
+    "sharp": "^0.33.4",
+    "style-loader": "^4.0.0",
+    "svgo": "^3.3.2",
+    "swiper": "^11.1.4",
+    "url-loader": "^4.1.1",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

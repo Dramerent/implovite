@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <!-- шрифт monsterrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- шрифт Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script defer src="filenamea47068b8420c7baa6230.js"></script><link href="filename6d2276da6c9cf23e6528.css" rel="stylesheet"></head>
+<body>
+  
+    <header class = "header" onclick="baseHeaderOff()" > 
+        <div class="stop-scroll"></div>
+        <a class = "header__NameLogo-And-Search">
+            <div onclick="ReturnToHomePage()" class="NameLogo">
+                    <img src="images/Name-Logo.svg" >
+            </div>
+            <div class="Search-Group">
+                <div class="SearchLine Search-Group__SearchLine" onclick="changeActiveSearch(this)">
+                    <div class="Anactive-Lupa Search-Group__Anactive-Lupa">
+                        
+                        <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+                    </div>
+                    <input class = "Search-Group__Input" placeholder="Поиск товара"  type="text"/>
+                    <div class="Lupa Search-Group__Lupa Search-Group__Lupa_Enabled  ">
+                        <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+                    </div>
+                    <div onclick = "ret()"class="Anactive-close Search-Group__Anactive-close ">
+                        <img class = "close__Img" src="images/close_types/Property 1=Default (1).svg" >
+                    </div>
+                    
+                   
+                        
+                </div>
+                
+                <div class="Like Search-Group__like">
+                    <img class = "Like__Img"src="images/like_types/like.svg" >
+                </div>
+            </div>
+            
+        </a>
+        <div class="Line">
+        </div>
+        <nav class="Header__Menu">
+            <a class="Header-Menu__Products"  onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Header-menu__Group ">
+                    <div class="3lines">
+                        <img class = "3lines__img" src="images/3_lines.svg" >
+                    </div>
+                    <p class = "menu-text">Каталог товаров</p>
+                </div>
+                
+            </a>
+            <a  target="_blank" class="Header-Menu__Brends" href = "brends.html" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Наши бренды</p>
+            </a>
+            <a  target="_blank"class="Header-Menu__Sales" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Акции</p>
+            </a>
+            <a  target="_blank"class="Header-Menu__ABC" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Азбука здоровья</p>
+            </a>
+            <a  target="_blank"class="Header-Menu__News" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Статьи</p>
+            </a>
+            <a  target="_blank"class="Header-Menu__Company" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">О компании</p>
+            </a>
+            <a  target="_blank"class="Header-Menu__Buy" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Header-menu__Buy-Group ">
+                    <div class="map">
+                        <img class = "map__img" src="images/map_place.svg" >
+                    </div>
+                    <p class = "menu-text">Где купить</p>                
+                </div>
+            </a>
+            <a  target="_blank"class="Header-Menu__Contacts" href = "/" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Контакты</p>
+            </a>
+           
+        </nav>
+        <nav class="header__Group Header__Group_Disabled" onclick = "baseHeaderOn()">
+            <a class="Logo-Small">
+                <img class = "Logo-small__img" src="images/header_closed/Group 8754.svg" >
+            </a>
+            <a class="Header-Group__Products"  onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Header-menu__Group ">
+                    <div class="3lines">
+                        <img class = "3lines__img" src="images/3_lines.svg" >
+                    </div>
+                    <p class = "menu-text">Каталог товаров</p>
+                </div>
+            </a>
+            <a  class="header-group__Brends" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Наши бренды</p>
+            </a>
+            <a class = "header-group__Sales" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Акции</p>
+            </a>
+            <a  class = "header-group__ABC" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Азбука здоровья</p>
+            </a>
+            <a  class = "header-group__News" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Статьи</p>
+            </a>
+            <a class = "header-group__Company" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">О компании</p>
+            </a>
+            <a  class = "header-group__Buy" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Header-menu__Buy-Group ">
+                    <div class="map">
+                        <img class = "map__img" src="images/map_place.svg" >
+                    </div>
+                    <p class = "menu-text">Где купить</p>                
+                </div>
+            </a>
+            <a  class = "header-group__contacts" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class ="menu-text">Контакты</p>
+            </a>
+            <a onclick = "headerGroupDisable()" class="Lupa header-group__Lupa header-group__Lupa_Enabled  ">
+                <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+            </a>
+            <a class="Like header-group__like">
+                <img class = "Like__Img"src="images/like_types/Property 1=Variant2 (2).svg" >
+            </a>
+            <div class="Search-Group Search-Group_anactive">
+                <div class="SearchLine Search-Group__SearchLine" onclick="">
+                    <div class="Anactive-Lupa search-Group__Anactive-Lupa">
+                        
+                        <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+                    </div>
+                    <input  class = "Search-Group__Input" placeholder="Поиск товара" onclick = "text()" type="text"/>
+                    <div class="Lupa Search-Group__Lupa Search-Group__Lupa_Enabled  ">
+                        <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+                    </div>     
+                </div>
+                <div onclick = "headerGroupEnable()"class="close Search-Group__close ">
+                        <img class = "close__Img" src="images/close_types/Property 1=Default (1).svg" >
+                </div>
+                
+            </div>
+
+
+        </nav>
+        <div class="header__Name-Logo header__Name-Logo_Disabled">
+            <img src="images/NameLogo1280.svg" >
+        </div>
+    </header>
+    <div class="Main-block">
+        <div class="stop-scroll"></div>
+        <div class="Mobile-Menu main-block__Mobile-Menu Mobile-Menu_anactive">
+            <a target="_blank" href = "index.html" class="Home-img">
+                <img  src="images/home/home (1).png" >
+            </a>
+            <div class="Mobile-Menu__buttons">
+                <a class="Mobile-Menu__button">
+                    <div class="lines3 Mobile-Menu__lines3">
+                        <img src="images/3_lines.svg" >
+                    </div>
+                    <p class = "mobile-menu-text">Каталог</p>
+                </a>
+                <a class="Mobile-Menu__button">
+                    <div class="map Mobile-Menu__map">
+                        <img src="images/map_place.svg" >
+                    </div>
+                    <div class="mobile-menu-text">Где купить</div>
+                </a>
+
+            </div>
+            <div onclick="fullMenu_enable()" class="3lines">
+                <img src="images/port-menu.png" >
+            </div>
+        </div> 
+        <div class="full-menu">
+            <div class="full-menu__header">
+                <div class="full-menu__line">
+                    <div class="full-menu__implovit">
+                        <img src="images/brends/brends__name/импловит.svg" >
+                    </div>
+                    <a onclick = "back()" class = "menu-text menu-text_anactive-gray">&lt; Назад </a>
+                  
+                </div>
+                <div class="full-menu__search-img">
+                    <img src="images/search_types/Property 1=Default.svg" >
+                </div>
+                <div onclick = "fullMenu_disable()"  class="full-menu__close">
+                    <img src="images/close-kvadrat/Property 1=Default.png" >
+                </div>
+            </div>
+            <div class="full-menu__body full-menu__body_group1">
+                     <a onclick = "next()" class="full-menu__kategory-first full-menu__kategory_iceblue">
+                    <div class="full-menu__group">
+                        <div class="3_lines full-menu__3lines">
+                            <img src="images/3_lines.svg" >
+                        </div>
+                        <p class = "full-menu-text">Каталог товаров</p>
+                        
+                    </div>
+                    <div class="vector full-menu__vector">
+                            <img src="images/fullMenu-arrow.svg" >
+                    </div>
+                     </a>
+
+                    <a class = "full-menu__kategory ">
+                <p class = "full-menu-text full-menu__full-menu-text">Наши бренды</p>
+
+                     </a>
+                     <a class = "full-menu__kategory">
+                    <p class = "full-menu-text full-menu__full-menu-text">Акции</p>
+                     </a>
+                     <a class = "full-menu__kategory">
+                    <p class = "full-menu-text full-menu__full-menu-text">Азбука здоровья</p>
+                     </a>
+                     <a class = "full-menu__kategory">
+                    <p class = "full-menu-text full-menu__full-menu-text">Статьи</p>
+                     </a>
+                     <a class = "full-menu__kategory">
+                    <p class = "full-menu-text full-menu__full-menu-text">О компании</p>
+                     </a>
+                     <a class = "full-menu__kategory">
+                    <div class="full-menu__group">
+                        <div class="map full-menu__map">
+                            <img src="images/map_place.svg" >
+                        </div>
+                        <p class = "full-menu-text">Где купить</p>
+                    </div>
+                     </a>
+                     <a class = "full-menu__kategory">
+                    <p class = "full-menu-text full-menu__full-menu-text">Контакты</p>
+                     </a>
+                     <a class = "full-menu__kategory">
+                         <div class="full-menu__slogo">
+                             <img src="images/slogo.svg" >
+                         </div>
+                     </a>
+            </div>
+            <div class="full-menu__body full-menu__body_group2">
+                    <a onclick = "next()" class="full-menu__kategory-first">
+                        
+                        <p class = "full-menu-text full-menu__full-menu-text">По направлениям</p>
+                        <div class="vector full-menu__vector">
+                            <img src="images/fullMenu-arrow.svg" >
+                    </div>
+                    </a>
+                    <a class = "full-menu__kategory ">
+                        <p class = "full-menu-text full-menu__full-menu-text">По активному компоненту</p>
+                        <div class="vector full-menu__vector">
+                            <img src="images/fullMenu-arrow.svg" >
+                    </div>
+                    </a>
+                    <a class = "full-menu__kategory">
+                        <p class = "full-menu-text full-menu__full-menu-text">Акции</p>
+                        <div class="vector full-menu__vector">
+                            <img src="images/fullMenu-arrow.svg" >
+                    </div>
+                    </a>
+            </div> 
+            <div class="full-menu__body full-menu__body_group3">
+                <div class="first-napravlenie">
+                   <div class="first-napravlenie__group">
+                     <div class="first-napravlenie__img-list">
+                            <img src="images/full-menu/list.png" >
+                     </div>
+                     <p class = "menu-text first-napravlenie__menu-text">Антиоксиданты</p>
+                   </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-gori">
+                            <img src="images/full-menu/gori.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Антистресс</p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                     <div class="napravlenie__group">
+                         <div class="napravlenie__img-gori">
+                             <img src="images/full-menu/gori.png" >
+                         </div>
+                         <p class = "menu-text napravlenie__menu-text">Для детей</p>
+                     </div>
+                 </div>
+                 <div class="napravlenie">
+                     <div class="napravlenie__group">
+                         <div class="napravlenie__img-flag">
+                             <img src="images/full-menu/flag.png" >
+                         </div>
+                         <p class = "menu-text napravlenie__menu-text">Для иммунитета и в сезон простуд
+                         </p>
+                     </div>
+                 </div>
+                 <div class="napravlenie">
+                     <div class="napravlenie__group">
+                         <div class="napravlenie__img-3balls">
+                             <img src="images/full-menu/pypirka.png" >
+                         </div>
+                         <p class = "menu-text napravlenie__menu-text">Для кожи и волос
+                         </p>
+                     </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для памяти, внимания и работы мозга  
+                    </p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                     <div class="napravlenie__group">
+                         <div class="napravlenie__img-gori">
+                             <img src="images/full-menu/gori.png" >
+                         </div>
+                         <p class = "menu-text napravlenie__menu-text">Для энергии и работоспособности</p>
+                     </div>
+                 </div>
+                 <div class="napravlenie">
+                     <div class="napravlenie__group">
+                         <div class="napravlenie__img-3balls">
+                             <img src="images/full-menu/pypirka.png" >
+                         </div>
+                         <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+
+                         </p>
+                     </div>
+                 </div>
+                 <div class="napravlenie">
+                     <div class="napravlenie__group">
+                         <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                         </div>
+                         <p class = "menu-text napravlenie__menu-text">Для горла
+                     </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-gori">
+                            <img src="images/full-menu/gori.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Для детей</p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-flag">
+                            <img src="images/full-menu/flag.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Борьба с вредными привычками
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                        <div class="napravlenie__img-3balls">
+                            <img src="images/full-menu/pypirka.png" >
+                        </div>
+                        <p class = "menu-text napravlenie__menu-text">Витамины и минералы
+                        </p>
+                    </div>
+                </div>
+                <div class="napravlenie">
+                    <div class="napravlenie__group">
+                      <div class="napravlenie__img-list">
+                             <img src="images/full-menu/list.png" >
+                      </div>
+                      <p class = "menu-text napravlenie__menu-text">Для горла</p>
+                    </div>
+                 </div>
+                 
+               
+            </div>
+            
+            <div class="full-menu__liked">
+                <div class="Like">
+                    <img src="images/like_types/like.svg" >
+                </div>
+                <p class = "fm-liked-text fm-liked-text_gray">Избранное</p>
+            </div>
+        </div>    
+       
+        <div class="history">
+            <a target="_blank" href = "index.html"class="home-img">
+                <img src="images/home/home.png" >
+            </a>
+            <p class = "podpis podpis_gray">&nbsp; /&nbsp;<span class = "active-page">Наши бренды</span>&nbsp;/&nbsp;<span class = "active-page">Кардиолла</span></p>
+        </div>
+        <div class="swiper1 mySwiper">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide swiper-slide_first-swipper">
+                <div class="swiper-slide__background">   
+                    <div class="kardiollaSwipperAll swiper-slide__kardiollaSwipperAll">
+                       <img src="images/brends/brends__img/kardiollaSwipperAll.svg" > 
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide__info-part">
+                    <div class="swiper-slide__seconf-info">
+                    <p class = "zagolovok">Кардиола</p>
+                    
+                    <p class = "subtitle2 swiper-slide__subtitle2">Забота о сердце для активной жизни</p>
+                    <p class = "Slider-text swiper-slide__Slider-text swiper-slide__Slider-text_active">Биологически активная добавка для здоровья сердца
+                        и активной жизни, в составе которой преобладают натуральные экстракты лекарственных растений и
+                        важные элементы, необходимые для заботы о сердце и сосудах.</p>
+                    <div class="swiper-slide__Group">
+                        <a href = "" target = "_blank"onmouseover = "bluetextButton(this)" onmouseleave = "whitetextButton(this)" class = "universal-button universal-button_blue universal-button_anactive">
+                            <span class = "button-text swiper-slide__button-text button-text_white-bolder">Подробнее</span>
+                        </a>
+                        <a href = "" target = "_blank" onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)" class =" button-text button-text_blue-bolder button-text_disbled"href="#">Подробнее</a>
+                        <a href = "" target = "_blank" onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)" class =" button-text swiper-slide__button-text button-text_blue-bolder"href="#">Отзывы(15)</a>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              
+            
+            </div>
+            
+        </div>
+        <div class="kardiolaOptions">
+            <div class="kardiolaOption1">
+                <div class="kardiolaOption__img1">
+                    <img src="images/kardiollaPunkts/Group 9484.png" alt="">
+                </div>
+                <p class = "Slider-text ">Стабилизирует ритм сердечной деятельности</p>
+            </div>
+           
+            <div class="kardiolaOption2">
+                <div class="kardiolaOption__img2">
+                    <img src="images/kardiollaPunkts/Group 9485.png" alt="">
+                </div>
+                <p class = "Slider-text ">Нормализует артериальное давление</p>
+            </div>
+            <div class="kardiolaOption3">
+                <div class="kardiolaOption__img3">
+                    <img src="images/kardiollaPunkts/Component 1.png" alt="">
+                </div>
+                <p class = "Slider-text ">Доступная цена</p>
+            </div>
+            <div class="kardiolaOption4">
+                <div class="kardiolaOption__img4">
+                    <img src="images/kardiollaPunkts/Component 2.png" alt="">
+                </div>
+                <p class = "Slider-text">Уникальный состав</p>
+            </div>
+            <div class="kardiolaOption5">
+                <div class="kardiolaOption__img5">
+                    <img src="images/kardiollaPunkts/Component 3.png" alt="">
+                </div>
+                <p class = "Slider-text ">Эффективность для хорошего самочувствия и ежедневной активности</p>
+            </div>
+
+        </div>
+        <div class="kardiola-citata">
+            <div class="kardiola-citata__Line">
+                <img src="images/Line 34.png" alt="">
+            </div>
+            <div class="kardiola-citata__opis">
+                <div class="kardiola-citata__zagolovok">
+                    <p class = "paragrapf ">Я хочу, чтобы мои близкие были здоровы</p>
+                </div>
+                <div class="kardiola-citata__text">
+                    <p class = "main-text ">За­боле­вания сер­дца час­то встре­ча­ют­ся сре­ди взрос­ло­го на­селе­ния. В пос­леднее вре­мя, по статис­ти­ке, воз­раст па­ци­ен­тов с сер­дечно-со­судис­ты­ми за­боле­вани­ями рез­ко по­моло­дел, по­это­му очень важ­но об­ра­щать вни­мание на не­кото­рые сим­пто­мы сер­дечных за­боле­ваний и сво­ев­ре­мен­но про­ходить ди­аг­ности­ку у кар­ди­оло­га. Здо­ровое сер­дце не­об­хо­димо для вы­соко­го ка­чес­тва жиз­ни. Это ор­ган, ко­торый не­ус­танно ра­бота­ет, ис­пы­тывая пос­то­ян­ную наг­рузку.</p>
+                    <p class = "slide-zagolovok slide-zagolovok_pink_active">Омега-3 &nbsp;не вырабатываются организмом, и их можно получить только вместе с пищей или специальными добавками.</p>
+                    
+                </div>
+                <div class="gradient kardiola-citata__gradient kardiola-citata__gradient_anactive">
+                
+                </div>
+            </div>
+            <p onclick = "kardiola_text_Fulltext(this)" class = "doplonenie-text doplonenie-text_blue-border-anactive">Ещё</p>
+        </div>
+        <div class="kardiola-sales">
+            <div class="kardiola-sales__zagolovok">
+                <p class = "paragrapf">Продукция Кардиола</p>
+            </div>
+            <div class="kardiola-sales__products">  
+                <div class="kardiola-sale kardiola-sale_grid1">
+                    <div class="Like kardiola-sale__like">
+                        <img src="images/like_types/like.svg" alt="">
+                    </div>
+                    <div class="stock kardiola-sale__stock stock_pink"><p class = "stock-text stock-text_white">новинка</p></div>
+                    <div class="swiper4 kardiola-sale__swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/kardiolla-kardiolla.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/kardiolla-kardiolla.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/kardiolla-kardiolla.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tochki kardiola-sale__tothki">
+                        <img src="images/brends/brends__img/five-tochek.svg" alt="">
+                    </div>
+                    <div class="kardiola-sale__content">
+                        <p class = "slide-zagolovok slide-zagolovok_center-mobile">Кардиола</p>
+                        <div class="kardiola-sale__param-group">
+                            <p class = "podpis">30 таблеток</p>
+                            <p class ="podpis">400 mg</p>
+                        </div>
+                        <div class="kardiola-sale__opis">
+                            <p class = "text-cards">добавка для здоровья сердца и активной жизни, 
+                                в составе которой преобладают натуральные экстракты лекарственных
+                                растений и важные элементы, необходимые для заботы о сердце и сосудах.</p>
+                        </div>
+                        <div class="abc-group">
+                            <div class="abc">
+                                <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152.png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Боярышник</p>
+                            </div>
+                            <div class="abc">
+                                 <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152 (1).png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Родиола розовая</p>                          
+                            </div>
+                            <div class="abc">
+                                <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152 (2).png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Витамин С</p>                           
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a href="" onmouseleave = "bluetextButton(this)" onmouseover = "whitetextButton(this)" class = "kardiola-sale__button" >
+                        <span class = "button-text button-text_blue-bolder">подробнее</span>
+                    </a>
+                </div>
+                <div class="kardiola-sale kardiola-sale_grid2">
+                    <div class="Like kardiola-sale__like">
+                        <img src="images/like_types/like.svg" alt="">
+                    </div>
+                    <div class="stock kardiola-sale__stock stock_green"><p class = "stock-text stock-text_white">Акция</p></div>
+                    <div class="swiper4 kardiola-sale__swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/kardiollaGroup.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/kardiollaGroup.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/kardiollaGroup.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tochki kardiola-sale__tothki">
+                        <img src="images/brends/brends__img/five-tochek.svg" alt="">
+                    </div>
+                    <div class="kardiola-sale__content">
+                        <p class = "slide-zagolovok slide-zagolovok_center-mobile">Сироп Кардиола</p>
+                        <div class="kardiola-sale__param-group">
+                            <p class = "podpis">30 таблеток</p>
+                            
+                        </div>
+                        <div class="kardiola-sale__opis">
+                            <p class = "text-cards">добавка для здоровья сердца и активной жизни, в составе которой 
+                                преобладают натуральные экстракты лекарственных растений и важные элементы, 
+                                необходимые для заботы о сердце и сосудах.</p>
+                        </div>
+                        <div class="abc-group">
+                            <div class="abc">
+                                <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152.png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Боярышник</p>
+                            </div>
+                            <div class="abc">
+                                 <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152 (1).png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Родиола розовая</p>                          
+                            </div>
+                            <div class="abc">
+                                <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152 (2).png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Витамин С</p>                           
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a href="" onmouseleave = "bluetextButton(this)" onmouseover = "whitetextButton(this)" class = "kardiola-sale__button" >
+                        <span class = "button-text button-text_blue-bolder">подробнее</span>
+                    </a>                       
+                </div>
+                <div class="kardiola-sale kardiola-sale_grid3">
+                    <div class="Like kardiola-sale__like">
+                        <img src="images/like_types/like.svg" alt="">
+                    </div>
+                    <div class="stock kardiola-sale__stock stock_persik"><p class = "stock-text stock-text_white">топ продаж</p></div>
+                    <div class="swiper4 kardiola-sale__swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/omega3-kardiola.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/omega3-kardiola.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/omega3-kardiola.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tochki kardiola-sale__tothki">
+                        <img src="images/brends/brends__img/five-tochek.svg" alt="">
+                    </div>
+                    <div class="kardiola-sale__content">
+                        <p class = "slide-zagolovok slide-zagolovok_center-mobile">Омега-3 Кардиола</p>
+                        <div class="kardiola-sale__param-group">
+                            <p class = "podpis">30 таблеток</p>
+                            <p class ="podpis">700 mg</p>
+                        </div>
+                        <div class="kardiola-sale__opis">
+                            <p class = "text-cards">Омега-3 «60%» обеспечит организм достаточным количеством ПНЖК Омега-3 для нормального функционирования сердечно-сосудистой системы, хорошего самочувствия и ежедневной активности.</p>
+                        </div>
+                        <div class="abc-group">
+                            <div class="abc">
+                                <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152 (2).png" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Витамин С</p>                           
+
+                            </div>
+                                                 
+
+                            </div>
+                    </div>
+                    <a href="" onmouseleave = "bluetextButton(this)" onmouseover = "whitetextButton(this)" class = "kardiola-sale__button" >
+                        <span class = "button-text button-text_blue-bolder">подробнее</span>
+                    </a>
+                        
+                </div>
+                <div class="kardiola-sale kardiola-sale_grid4">
+                    <div class="Like kardiola-sale__like">
+                        <img src="images/like_types/like.svg" alt="">
+                    </div>
+                    <div class="stock kardiola-sale__stock stock_persik"><p class = "stock-text stock-text_white">топ продаж</p></div>
+                    <div class="swiper4 kardiola-sale__swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/omega3-kardiola.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/omega3-kardiola.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper4__swiper-slide">
+                                <div class="swiper4__img">
+                                    <img src="images/brends/brends__img/kardiolla/omega3-kardiola.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tochki kardiola-sale__tothki">
+                        <img src="images/brends/brends__img/five-tochek.svg" alt="">
+                    </div>
+                    <div class="kardiola-sale__content">
+                        <p class = "slide-zagolovok slide-zagolovok_center-mobile">Омега-3 Кардиола</p>
+                        <div class="kardiola-sale__param-group">
+                            <p class = "podpis">30 таблеток</p>
+                            <p class ="podpis">700 mg</p>
+                        </div>
+                        <div class="kardiola-sale__opis">
+                            <p class = "text-cards">Омега-3 «60%» обеспечит организм достаточным количеством ПНЖК Омега-3 для нормального функционирования сердечно-сосудистой системы, хорошего самочувствия и ежедневной активности.</p>
+                        </div>
+                        <div class="abc-group">
+                            <div class="abc">
+                                <div class="abc__img">
+                                    <img src="images/abc-images/Ellipse 152.svg" alt="">
+                                </div>
+                                <p class = "links-menu abc__links-menu">Боярышник</p>
+                            </div>
+                                                 
+
+                            </div>
+                    </div>
+                    <a href="" onmouseleave = "bluetextButton(this)" onmouseover = "whitetextButton(this)" class = "kardiola-sale__button" >
+                        <span class = "button-text button-text_blue-bolder">подробнее</span>
+                    </a>
+                        
+                </div>
+                <div class=""></div>
+            </div>
+          
+        </div>
+        <div class="brends-page">
+            <img src="images/Брендовая страница.png" alt="">
+        </div>
+        <div class="kardiola-opis">
+            <div class="kardiola-opis__zagolovok">
+                <p class = "paragrapf">Что входит в состав Кардиола?</p>
+                <p class = "slide-zagolovok slide-zagolovok_pink">Забота о сердце для активной жизни</p>
+            </div>
+            <div class="kardiola-opis__text ">
+                <p class = "main-text kardiola-opis__main-text">Кардиола и Омега 3 — это серия продуктов, призванная заботиться о 
+                    ваше сердце и сосудах.  Кардиола – биологически активная добавка 
+                    для здоровья сердца и активной жизни, в составе которой преобладают
+                     натуральные экстракты лекарственных растений и важные элементы, 
+                     необходимые для заботы о сердце и сосудах.</p>
+                <p class = "main-text">Кардиола и Омега 3 — это серия продуктов, призванная заботиться о 
+                    ваше сердце и сосудах.  Кардиола – биологически активная добавка для здоровья сердца и 
+                    активной жизни, в составе которой преобладают натуральные экстракты лекарственных растений
+                     и важные элементы, необходимые для заботы о сердце и сосудах.</p>
+
+            </div>                
+            <p onclick = "kardiolaOpis_text_Fulltext(this)" class = "doplonenie-text doplonenie-text_blue-border-anactive doplonenie-text_absolute-margin-anactive">Ещё</p>
+
+
+            
+        </div>
+        <div class="base-elements">
+            <p class = "H3">Основные элементы заботы:</p>
+            <div class="base-elements__elements">
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152.png" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Боярышник</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (1).svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Родиола розовая</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (2).svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Боярышник</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (3).svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Чага</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152.svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Шиповник</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (4).png" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Калина</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (5).png" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">куркума</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (2).png" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">куркума</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152.png" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Боярышник</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (1).svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Родиола розовая</p>
+                </div>
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (2).svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Боярышник</p>
+                </div>
+               
+                <div class="abc">
+                    <div class="abc__img">
+                        <img src="images/abc-images/Ellipse 152 (3).svg" alt="">
+                    </div>
+                    <p class = "links-menu abc__links-menu abc__links-menu_blue">Чага</p>
+                </div>
+                
+                
+            </div>
+            <a onmouseleave = "whitetextButton(this)" onmouseover = "bluetextButton(this)" class="universal-button universal-button_blue">
+                <span class = "button-text button-text_white-bolder">Азбука здоровья</span>
+            </a>
+        </div>
+        <div class="kardiola-otzivi">
+            <div class="kardiola-otzivi__zagolovok">
+                <p class = "podpis">Ваши отзывы очень важны для нас</p>
+                <p class ="paragrapf">Отзывы о препарате Кардиола</p>
+            </div>
+            <div class="Otzivi-slider kardiola-otzivi__Otzivi-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide Otzivi-slider__swiper-slide">
+                        <div class="Otzivi-slider__zagolovok">
+                            <p class = "adress">Константин Константинопольский</p>
+                            <div class="four-start-img">
+                                <img src="images/fourStars.png" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <p class = "text-cards">Мощный иммуномодулятор. Растение защищает 
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.  Мощный иммуномодулятор. Растение защищает
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.</p>
+                        <br>
+                        <p class = "text-cards">Мощный иммуномодулятор. Растение защищает 
+                            организм от вирусов и бактерий, а также укрепляет и 
+                            стимулирует иммунитет для самостоятельной борьбы с инфекциями
+                            и воспалениями без применения лекарств. Мощный иммуномодулятор.
+                            Растение защищает организм от вирусов и бактерий, а также 
+                            укрепляет и стимулирует иммунитет для самостоятельной борьбы 
+                            с инфекциями и воспалениями без применения лекарств.  Мощный 
+                            иммуномодулятор. Растение защищает организм от вирусов и 
+                            бактерий, а также укрепляет и стимулирует иммунитет для 
+                            самостоятельной борьбы с инфекциями и воспалениями без 
+                            применения лекарств.
+                        </p >
+                    </div>
+                    <div class="swiper-slide Otzivi-slider__swiper-slide">
+                        <div class="Otzivi-slider__zagolovok">
+                            <p class = "adress">Константин Константинопольский</p>
+                            <div class="four-start-img">
+                                <img src="images/fourStars.png" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <p class = "text-cards">Мощный иммуномодулятор. Растение защищает 
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.  Мощный иммуномодулятор. Растение защищает
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.</p>
+                        <br>
+                       
+                    </div>
+                    <div class="swiper-slide Otzivi-slider__swiper-slide">
+                        <div class="Otzivi-slider__zagolovok">
+                            <p class = "adress">Константин Константинопольский</p>
+                            <div class="four-start-img">
+                                <img src="images/fourStars.png" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <p class = "text-cards">Мощный иммуномодулятор. Растение защищает 
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.  Мощный иммуномодулятор. Растение защищает
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.</p>
+                        <br>
+                       
+                    </div>
+                    <div class="swiper-slide Otzivi-slider__swiper-slide">
+                        <div class="Otzivi-slider__zagolovok">
+                            <p class = "adress">Константин Константинопольский</p>
+                            <div class="four-start-img">
+                                <img src="images/fourStars.png" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <p class = "text-cards">Мощный иммуномодулятор. Растение защищает 
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.  Мощный иммуномодулятор. Растение защищает
+                            организм от вирусов и бактерий, а также укрепляет и стимулирует
+                            иммунитет для самостоятельной борьбы с инфекциями и воспалениями
+                            без применения лекарств.</p>
+                        <br>
+                       
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <div class="kardiola-otzivi__nav-group">
+                <div class="nav">
+                    <img src="images/управление слайдером.png" alt="">
+                </div>
+                <a onmouseleave = "whitetextButton(this)" onmouseover = "bluetextButton(this)" class="universal-button universal-button_blue">
+                    <nav class = "button-text button-text_white-bolder">Оставить отзыв</nav>
+                </a>
+            </div>
+             
+        </div>
+        <div class="kardiola-stati">
+            <div class = "kardiola-stati__zagolovok">
+                <p class = "podpis">Журнал</p>
+                <p class = "paragrapf">Узнай больше о сердце и сосудах</p>
+            </div>
+            <div class="kardiola-stati__cards">
+                <div class="kardiola-stati__main-card">
+                    <div class="kardiola-stati__main-Img">
+                        <img src="images/kardiola-stati/Анимация статьи большой.png" >
+                    </div>
+                    <div class="kardiola-stati__main-text"> 
+                        <a target="_blank" href = "/" href ="" onmouseenter="icebluetext(this)" onmouseleave="blacktext(this)"class = "H3 kardiola-stati__H3 H3_center">
+                            Дела сердечные
+                        </a>
+                        <div class="kardiola-stati__main-opis ">
+                            <p class = "text-cards ">— Первые поводы для беспокойства — 
+                                появление загрудинных болей и одышки при физических нагрузках, — 
+                                говорит Станислав Захаров, кардиолог, врач функциональной диагностики
+                                 клиники «МедикСити».</p>
+                        </div>
+                        <a target="_blank" href = "/" onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)" class = "brends-a-text kardiola-stati__brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        
+                    </div>
+                   
+                          
+
+                </div>
+                <div class="kardiola-stati__second-card kardiola-stati__second-card_active ">
+                    <div class="kardiola-stati__card">
+                        <div class="kardiola-stati__img1"> 
+                            <img src="images/kardiola-stati/Анимация стать мини4.png" >
+                        </div>
+                        <div class="kardiola-stati__text"> 
+                            <a target="_blank" href = "/" href = "/"onmouseenter="icebluetext(this)" onmouseleave="blacktext(this)"class = "h4 kardiola-stati__h4 ">
+                                Вершки и корешки
+                            </a>
+                            <a target="_blank" href = "/"onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)"class = "brends-a-text kardiola-stati__brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="kardiola-stati__card kardiola-stati__card_active">
+                        <div class="kardiola-stati__img2">
+                            <img src="images/kardiola-stati/Анимация стать мини3.png" >
+                        </div>
+                        <div class="kardiola-stati__text"> 
+                            <a target="_blank" href = "/" onmouseenter="icebluetext(this)" onmouseleave="blacktext(this)"class = "h4 kardiola-stati__h4 ">Пилатес — физкультура для всех</a>
+                            <a target="_blank" href = "/"onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)"class = "brends-a-text kardiola-stati__brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+
+                    </div>
+                    <div class="kardiola-stati__card">
+                        <div class="kardiola-stati__img3"> 
+                            <img src="images/kardiola-stati/Анимация стать мини1.png" >
+                        </div>
+                        <div class="kardiola-stati__text"> 
+                            <a target="_blank" href = "/" onmouseenter="icebluetext(this)" onmouseleave="blacktext(this)"class = "h4 kardiola-stati__h4 ">Аритмия: 9 важных вопросов о сердце</a>
+                            <a target="_blank" href = "/"onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)"class = "brends-a-text kardiola-stati__brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="kardiola-stati__card kardiola-stati__card_active">
+                        <div class="kardiola-stati__img4">
+                            <img src="images/kardiola-stati/Анимация стать мини2.png" >
+                        </div>
+                        <div class="kardiola-stati__text"> 
+                            <a target="_blank" href = "/" onmouseenter="icebluetext(this)" onmouseleave="blacktext(this)"class = "h4 kardiola-stati__h4 ">Идти или бежать?</a>
+                            <a target="_blank" href = "/"onmouseenter="icebluetext(this)" onmouseleave="bluetext(this)"class = "brends-a-text kardiola-stati__brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+            <a target="_blank" href = "/" onmouseover = "bluetextButton(this)" onmouseleave = "whitetextButton(this)" class = "universal-button kardiola-stati__universal-button universal-button_blue"><span class = "button-text button-text_white-bolder">Перейти ко всем ссылкам</span></a>
+            
+        </div>
+        <div class="about-Company about-Company_brends-margin_pink-background">
+
+            <div class="about-Company__zagolovok">
+                <p class = "podpis podpis_white">Наше производство</p>
+                <p class = "paragrapf paragrapf_white">7 ступеней контроля качества
+                </p>
+            </div>
+            <div class="about-Company__opis about-Company__opis_paddind">
+                <p class = "main-text main-text_white">Мы заботимся о безопасности своей продукции и здоровье потребителей, постоянно улучшая и обеспечивая контроль качества в течение всего жизненного цикла препаратов: от стадии разработки до этапа проверки выпускаемой продукции </p>
+                <a target="_blank" href = "/" onmouseover = "pinktext(this)" onmouseleave = "whitetextButton(this)" class = "universal-button universal-button_pink"><span class = "button-text button-text_white-bolder">смотреть видео о производстве</span></a>
+            </div>
+            
+        </div>
+        <div class="kardiola-buy"></div>
+    </div>
+    
+
+
+
+
+
+        <div class="map-places map-places_oneBrend-margin">
+            <div class="map-places__zagolovok">
+             <p class = "podpis">Импловит в аптеках города</p>
+             <p class = "paragrapf">Где купить</p>
+            </div>
+            <div onclick = "tumblerRightLeft_1280(this)" class="turn-left-right map-places__turn-left-right map-places__turn-left-right_anactive">
+                 <p onmouseover = "activeTumblerHoverLeft(this)"onmouseleave="anactiveTumblerHoverLeft(this)" class = "Anim-Block-text Anim-Block-text_anactive">Списком</p>
+                 <div class="turn-left-right__tumbler "></div>
+                 <p  onmouseover = "activeTumblerHoverRight(this)" onmouseleave="anactiveTumblerHoverRight(this)" class = "Anim-Block-text Anim-Block-text_gray_anactive">На карте</p>
+             </div>
+            <div class="city-choice">
+             <p class = "city-text">Город: </p>
+             <p class = "city-text city-text__bolder">Москва</p>
+            </div>
+            <div class="search-block">
+                 <div class="search-block__searchLine search-block__searchLine_anactive">
+                     <input class = "search-block__input"type="text" placeholder="Введите адресс аптеки">
+                     <div class="Lupa search-block__Lupa search-block__Lupa_anactive ">
+                         <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+                     </div>
+                 </div>
+                 <div class="citys-adress">
+                     <div class="search-block__searchLine">
+                         <input class = "search-block__input"type="text" placeholder="Введите адресс аптеки">
+                         <div class="Lupa search-block__Lupa  ">
+                             <img class = "Lupa__Img" src="images/search_types/Property 1=Default.svg" >
+                         </div>
+                     </div>
+                     <div class="cities ">
+                        <a onmouseover="Citiesbluetext(this)" onmouseleave="Citiesblacktext(this)" target="_blank" href = "/" class="citie">
+                             <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                             <p class = "anons">м.Бульвар Рокоссовского</p>
+                             <p class = "anons">+7 (495) 215-52-15</p>
+                             <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                        </a> 
+                        <div class="cities__line">
+                         <img src="images/Line 10.svg" >
+                        </div>
+                        <a onmouseover="Citiesbluetext(this)" onmouseleave="Citiesblacktext(this)" target="_blank" href = "/"class="citie cities__citie">
+                             <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                             <p class = "anons">м.Бульвар Рокоссовского</p>
+                             <p class = "anons">+7 (495) 215-52-15</p>
+                             <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                        </a> 
+                        <div class="cities__line">
+                         <img src="images/Line 10.svg" >
+                        </div>
+                        <a onmouseover="Citiesbluetext(this)" onmouseleave="Citiesblacktext(this)" target="_blank" href = "/" class="citie cities__citie">
+                             <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                             <p class = "anons">м.Бульвар Рокоссовского</p>
+                             <p class = "anons">+7 (495) 215-52-15</p>
+                             <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                        </a>
+                        <div class="cities__line">
+                         <img src="images/Line 10.svg" >
+                        </div>
+                        <a onmouseover="Citiesbluetext(this)" onmouseleave="Citiesblacktext(this)" target="_blank" href = "/"class="citie cities__citie">
+                         <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                         <p class = "anons">м.Бульвар Рокоссовского</p>
+                         <p class = "anons">+7 (495) 215-52-15</p>
+                         <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p> 
+                        </a> 
+                    
+                                                    
+                     </div>
+                 </div>
+                 <div class="yandex-map">
+                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab388a5f2ad40bbfb297d91b620842bc11552de867de94b648c6b5d0361d05d3a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                 </div>
+            </div>
+            
+        </div>
+        <footer class = "footer">
+             <div class="footer__first-block">
+                 <div class="footer-first-block__container">
+                     <div class="footer__zagolovok">
+                         <p class = "podpis">Где купить</p>
+                         <p class = "paragrapf">Спрашивайте продукты Импловит 
+                             в аптеках</p>
+                     </div>
+                     <div class="footer__img-group-1">
+                         <div class="footer__im1">
+                             <a href="">
+                                 <img src="images/apteeki.png" >
+                             </a>
+                         </div>
+                         <p class = "brends-a-text brends-a-text_bolder">stolichki.ru</p>
+                     </div>
+                     <div class="footer__img-group-2">
+                         <div class="footer__img2">
+                             <a href="">
+                                 <img src="images/neopfarm.png" >
+                             </a>
+                         </div>
+                         <p class = "brends-a-text brends-a-text_bolder">neopharm.ru</p>
+                     </div>
+                 </div>
+ 
+             </div>
+             <div class="footer__second-block">
+                 <div class="footer-second-block__container">
+                      <div class="footer__info">
+                     <div class="footer__implovit">
+                         <img src="images/footer-implovit.svg" >
+                     </div>
+                     <div class="footer__a-s1">
+                         <div class="footer__a">
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">Каталог товаров</a>
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href=  "#"class ="footer-a-text footer-a-text_white">О компании</a>
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="brends.html" class = "footer-a-text footer-a-text_white">наши бренды</a>
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">Акции</a>
+ 
+                             
+                         </div>
+                         <div class="footer__a">
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">Азбука здоровья</a>
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">Статьи</a>
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">Где купить</a>
+                             <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">Контакты</a>
+                         </div>
+                     </div>
+                     <div class="footer__a-s2">
+                         <div class="footer__a">
+                             <a href="#" class = "footer-a-text footer-a-text_white">ООО «НЕО-ФАРМ»</a>
+                             <a href="#" class = "footer-a-text footer-a-text_white">117246, Россия, г. Москва, </a>
+                             <a href="#" class = "footer-a-text footer-a-text_white">ул. Обручева, д. 55А</a>
+                             <a href="#" class = "footer-a-text footer-a-text_white">+7 (499) 648 - 37 - 27</a>
+                         </div>
+                         <a onmouseenter="icebluetext(this)" onmouseleave="whitetext(this)"href="#" class = "footer-a-text footer-a-text_white">customer@implovit.ru</a>
+ 
+                         <a href=""></a>
+                     </div>
+ 
+ 
+                      </div>
+                 </div>    
+                 <div class="footer__line">
+                     <img src="images/footer-libe.svg" >
+                 </div>
+                 <div class="footer__logo">
+                      <div class="footer__amado">
+                         <img src="images/footer-amado.svg" >
+                      </div>
+                 </div>
+                 <div class="footer__podpis">
+                     <p class = "footer-layout">БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ СРЕДСТВОМ</p>
+                 </div>
+                  
+             </div>
+            
+             
+        </footer>
+    
+    </div>
+    
+    
+  
+
+
+
+</body>
+</html>
